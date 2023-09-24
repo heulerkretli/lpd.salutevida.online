@@ -164,8 +164,56 @@ If you're ready, click the button below to watch the video:</p>
     }
   </script>
     
-    <footer class="bg-dark py-3 text-center">
-      <div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
+    <footer class="bg-white py-3 text-center">
+
+        <h6><span style="color:#6C757D">Copyright 2023 – The Hidden App ®
+                <br>All Rights Reserved</span><br><br>
+
+            <div class="text-secondary"><a href="terms.html" class="text-secondary">Terms of Use</a> – <a
+                    href="privacy.html" class="text-secondary">Privacy Policy</a></div><br>
+
+                    <script type="text/javascript">
+                        var back_redirect_back_link = "/br" + location.search;
+                        // Não altere daqui para baixo
+                        history.pushState({}, "", location.href);
+                        history.pushState({}, "", location.href);
+                  
+                        window.addEventListener(
+                          "popstate",
+                          function (event) {
+                            if (event.state) {
+                              setTimeout(function () {
+                                location.href = back_redirect_back_link;
+                              }, 1);
+                            }
+                          },
+                          false
+                        );
+                      </script>
+
+            <script>
+    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com", "https://go.hotmart.com", "https://lpa.salutevida.online"];
+
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+    }
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}();
+</script>
+
     </footer>
     
 </body>
